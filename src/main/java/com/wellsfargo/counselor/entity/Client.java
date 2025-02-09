@@ -16,12 +16,12 @@ public class Client {
     @JoinColumn(name = "advisorId", nullable = false)
     private long advisorId;
 
-    public Client(long clientId, String name, String email, String phone, long advisorId) {
+    public Client(long clientId, String name, String email, String phone, Advisor advisor) {
         this.clientId = clientId;
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.advisorId = advisorId;
+        this.advisorId = ;
     }
 
     public long getClientId() {
